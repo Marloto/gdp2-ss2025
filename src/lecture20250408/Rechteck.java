@@ -1,4 +1,4 @@
-package lecture2025048;
+package lecture20250408;
 
 public class Rechteck {
     private double breite;

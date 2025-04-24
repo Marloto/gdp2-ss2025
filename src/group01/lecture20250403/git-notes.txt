@@ -1,0 +1,30 @@
+Rückblick Git
+- bitbucket für C-Programmierung
+- immer die Ergebnisse für die Testate hochgeladen
+- Shell und CLI
+- git add -> Änderungen auf die Stage platzieren
+- git commit -> Alle Änderungen der Stage in einem "Zustand" zusammenpacken
+                Dieser könnte dann auf Bitbucket bereitgestellt werden (vgl. push)
+- git push -> (Remote = Bitbucket-Server), alle Commits die nicht auf dem Remote liegen
+              werden hochgeladen
+- wenn mehrere an einem Repo arbeiten, dann kommen Themen rund um Merge / Rebase hinzu
+- git config -> name und email hinterlegt
+- git fetch
+- git pull -> update des lokalen repositories basierend auf dem Remote (fetch + merge)
+- git status
+- git clone -> existierendes repo lokal kopieren / laden
+- git init -> leeres repo anlegen / nicht zwingend notwendig
+- Unter Windows würde man über git-scm.com die Git-Werkzeuge und Git-Bash erhalten
+- Eclipse bettet dies ebenfalls ein
+- Wenn es ein Projekt im Repo ist (auch unter Ordner) in der eine pom.xml liegt
+  -> Eclipse über File > Import > Maven > Existing Maven Project
+  -> Ort auf der Festplatte finden, wo gecloned wurde
+  -> mit Finish bestätigen, wenn in dem Ordner eine pom.xml gefunden wurde
+- Git in Eclipse
+  - Perspektive: Window -> Perspective -> Open Perspective -> Other -> git auswählen
+  - Clone über Eclipse mit der Git-Perspektive, über Working-Tree kann ein Import getriggert werden
+  - Zukünftig: Rechtsklick auf das Projekt in der Java-Perspektive > Team > Pull für Updates
+- Neues Projekt über Bitbucket, vorinitialisiert mit README
+  - Token erstellen
+  - Über Konsole: git clone https://x-token-auth:<token>@bitbucket.org/marlotoo/gdp2-p1.git
+  - Über Eclipse:

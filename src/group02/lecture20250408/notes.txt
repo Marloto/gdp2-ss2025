@@ -1,0 +1,32 @@
+## Git
+
+- Clone -> Git lokal laden / kopieren, lädt alle commits (eingrenz) -> idee lokal ohne inet arbeiten
+- Add -> neues hinzuzufügen von Elementen die auf die "Stage" sollen
+- Commit -> nutzt alles auf der "Stage" und erzeugt einen "Eingefrohenen" Punkt / Zustand -> Git arbeitet mit Snapshots, jeder Commit hat ein od. vorgänger
+- Push -> Upload auf das "Remote" Repository, lädt alle Commits die der Remote nicht kennt auf diesen hoch, soweit sie dinge "ergänzen"
+- Pull -> lädt sich alles vom Remote, i.A. alle Commits die fehlen; fetch + merge (alle commits vom Remote werden lokal in origin/main, der merge übernimmt dies dann in ihren main)
+- (Merge / Rebase) -> später
+- Status -> immer und so oft wie möglich, prüfen wie der aktuelle Status ist
+
+- Achten Sie darauf, wie genau sie clonen - per HTTPS oder SSH; wenn HTTPS brauchen Sie ein Access Token für private Projekte, wenn SSH dann entsprechend Keys konfigurieren
+
+### Git Repo ins Eclipse ziehen
+
+- Window -> Perspective -> Open Perspective -> Open
+- Clone-Befehl in der UI links nutzen
+- URL eingeben
+- ... und Ort auswählen
+- Alternativ: existierendes Repo (local) verwenden, per Browse finden
+
+- für Vorlesungsergebnisse reicht (anstatt über Git-View) auch direkt der Import "as existing Maven"
+
+### VA06-Projekt in ein Git-Repo verwandeln
+
+- navigieren Sie in der Konsole in den Ordner (va06, im Workspace)
+- nutzen Sie "git init"
+- Refresh??
+
+git remote add origin https:// ...
+git add .
+git commit -m "initial commit"
+git push -u origin main

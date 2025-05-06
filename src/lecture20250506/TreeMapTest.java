@@ -12,7 +12,7 @@ public class TreeMapTest extends Messwerkzeuge {
             // in die Datenstruktur
             Data key = dummy(i);
             String value = dummyData(i);
-            
+            treeMap.put(key, value);
         }
         stopAndPrint("Hinzufügen: %fns");
 
@@ -21,7 +21,7 @@ public class TreeMapTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             Data key = dummy(i);
             // Prüfen Sie ob der Schlüssel in der Menge enthalten ist
-            
+            treeMap.containsKey(key);
         }
         stopAndPrint("Element enthalten: %fns");
 
@@ -34,12 +34,12 @@ public class TreeMapTest extends Messwerkzeuge {
         stopAndPrint("Iterieren (mit for-each): %fns");
 
         // --------------------- Löschen --------------------------
-        TreeMap<Data, String> copyList = new TreeMap<>(treeMap);
+        TreeMap<Data, String> copyMap = new TreeMap<>(treeMap);
         start();
         for (int i = 0; i < ITERATIONS; i++) {
             Data key = dummy(i);
             // Entfernen Sie den Schlüssel key aus der Datenstruktur
-            
+            copyMap.remove(key);
         }
         stopAndPrint("Löschen: %fns");
     }

@@ -9,7 +9,7 @@ public class HashSetTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             // Fügen Sie das Objekt dummy zum Anfang der ArrayList hinzu
             Data dummy = dummy(i);
-            
+            hashSet.add(dummy);
         }
         stopAndPrint("Hinzufügen: %fns");
 
@@ -18,7 +18,7 @@ public class HashSetTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             Data dummy = dummy(i);
             // Prüfen Sie ob ein Element in der Menge enthalten ist
-            
+            hashSet.contains(dummy);
         }
         stopAndPrint("Element enthalten: %fns");
 
@@ -36,7 +36,7 @@ public class HashSetTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             Data dummy = dummy(i);
             // Entfernen Sie das Element dummy aus der Menge
-            
+            copySet.remove(dummy);
         }
         stopAndPrint("Löschen: %fns");
     }

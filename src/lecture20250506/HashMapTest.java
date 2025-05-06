@@ -11,7 +11,7 @@ public class HashMapTest extends Messwerkzeuge {
             // in die Datenstruktur
             Data key = dummy(i);
             String value = dummyData(i);
-            
+            hashMap.put(key, value);
         }
         stopAndPrint("Hinzufügen: %fns");
 
@@ -20,7 +20,7 @@ public class HashMapTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             Data key = dummy(i);
             // Prüfen Sie ob der Schlüssel in der Menge enthalten ist
-            
+            hashMap.containsKey(key);
         }
         stopAndPrint("Element enthalten: %fns");
 
@@ -38,7 +38,7 @@ public class HashMapTest extends Messwerkzeuge {
         for (int i = 0; i < ITERATIONS; i++) {
             Data key = dummy(i);
             // Entfernen Sie den Schlüssel key aus der Datenstruktur
-            
+            copyMap.remove(key);
         }
         stopAndPrint("Löschen: %fns");
     }

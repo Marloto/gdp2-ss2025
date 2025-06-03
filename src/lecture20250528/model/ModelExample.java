@@ -4,6 +4,7 @@ public class ModelExample {
     public static void main(String[] args) {
         Article art1 = new Article("ProduktA", 10.00);
         Article art2 = new Article("ProduktB", 5.00);
+        
         Table table = new Table(1);
         table.addReservation(new Reservation("10:00", "A"));
         table.addReservation(new Reservation("20:00", "B"));

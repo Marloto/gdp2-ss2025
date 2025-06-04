@@ -1,6 +1,7 @@
-package lecture20250528.ui.solution;
+package lecture20250603;
 
 import javafx.application.Application;
+import lecture20250603.ui.TableManager;
 
 public class Main {
     

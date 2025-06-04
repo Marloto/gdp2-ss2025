@@ -1,11 +1,9 @@
-package lecture20250528.ui.solution;
+package lecture20250603.ui;
 
 import java.util.ArrayList;
 
 import javafx.application.Application;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -18,9 +16,9 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import lecture20250528.model.Article;
-import lecture20250528.model.Reservation;
-import lecture20250528.model.Table;
+import lecture20250603.model.Article;
+import lecture20250603.model.Reservation;
+import lecture20250603.model.Table;
 
 public class TableManager extends Application {
 	

@@ -1,4 +1,4 @@
-package lecutre20250527.solution;
+package lecture20250527.solution;
 
 import javafx.application.Application;
 

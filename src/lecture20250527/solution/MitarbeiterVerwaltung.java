@@ -1,4 +1,4 @@
-package lecutre20250527.solution;
+package lecture20250527.solution;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -21,8 +21,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import lecutre20250527.Mitarbeiter;
-import lecutre20250527.MitarbeiterListe;
+import lecture20250527.Mitarbeiter;
+import lecture20250527.MitarbeiterListe;
 
 public class MitarbeiterVerwaltung extends Application {
 	

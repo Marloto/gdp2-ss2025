@@ -1,4 +1,4 @@
-package lecutre20250527;
+package lecture20250527;
 
 import java.util.ArrayList;
 import java.util.List;

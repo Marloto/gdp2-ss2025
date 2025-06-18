@@ -3,6 +3,7 @@ package lecture20250617;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.function.BinaryOperator;
@@ -90,6 +91,25 @@ public class StreamApiExample {
 			.map((person) -> person.getName())
 			.sorted((name1, name2) -> name1.compareTo(name2))
 			.forEach(System.out::println);
+		
+		// Übersetzung in ohne Lambda und Stream-API
+		List<String> names = new ArrayList<>();
+		for(Person p : arr) {
+			if(p.getAge() >= 18) {
+				if(p.getName().startsWith("A")) {
+					String name = p.getName();
+					names.add(name);
+				}
+			}
+		}
+		names.sort(new Comparator<String>() {
+			public int compare(String o1, String o2) {
+				return o1.compareTo(o2);
+			}
+		});
+		for(String name : names) {
+			System.out.println(name);
+		}
 		
 		// Was sind Terminal-Operatoren?
 		// -> forEach: Consumer, interface Consumer<T> { void accept(T el); }
